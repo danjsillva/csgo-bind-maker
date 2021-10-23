@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import DevelopedBy from "./components/DevelopedBy";
 
-import commandsList from "./commands.json";
-import keysList from "./keys.json";
+import commandsList from "./utils/commands.json";
+import keysList from "./utils/keys.json";
 
 export default function App() {
   const [form, setForm] = useState({ key: "", command: "" });
