@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import DevelopedBy from "./components/DevelopedBy";
 
 import commandsList from "./commands.json";
 import keysList from "./keys.json";
@@ -154,13 +155,17 @@ export default function App() {
             className="form-control"
           ></textarea>
 
-          <button
-            onClick={(e) => navigator.clipboard.writeText(result)}
-            disabled={!commands.length}
-            className="btn btn-outline"
-          >
-            Copiar
-          </button>
+          <div className="d-flex justify-content-between align-items-center">
+            <button
+              onClick={(e) => navigator.clipboard.writeText(result)}
+              disabled={!commands.length}
+              className="btn btn-outline"
+            >
+              Copiar
+            </button>
+
+            <DevelopedBy />
+          </div>
         </article>
       </section>
     </main>
