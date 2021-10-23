@@ -1,0 +1,130 @@
+[
+  { "type": "Movimentação", "key": "+forward", "value": "Mover para frente" },
+  { "type": "Movimentação", "key": "+back", "value": "Mover para trás" },
+  {
+    "type": "Movimentação",
+    "key": "+moveleft",
+    "value": "Mover para a esquerda"
+  },
+  {
+    "type": "Movimentação",
+    "key": "+moveright",
+    "value": "Mover para a direita"
+  },
+  { "type": "Movimentação", "key": "+jump", "value": "Pular" },
+  { "type": "Movimentação", "key": "+duck", "value": "Agachar" },
+  { "type": "Movimentação", "key": "+speed", "value": "Mover devagar" },
+
+  { "type": "Ação", "key": "+attack", "value": "Atirar" },
+  {
+    "type": "Ação",
+    "key": "+attack2",
+    "value": "Usar scope/Trocar modo de disparo"
+  },
+  { "type": "Ação", "key": "+reload", "value": "Recarregar arma" },
+
+  { "type": "Ação", "key": "+use", "value": "Usar/Pegar/Abrir" },
+  { "type": "Ação", "key": "drop", "value": "Soltar equipamento" },
+  { "type": "Ação", "key": "slot1", "value": "Usar arma principal" },
+  { "type": "Ação", "key": "slot2", "value": "Usar arma secundária" },
+  { "type": "Ação", "key": "slot3", "value": "Usar faca" },
+  { "type": "Ação", "key": "slot4", "value": "Usar granadas" },
+  { "type": "Ação", "key": "slot5", "value": "Usar c4" },
+  { "type": "Ação", "key": "slot6", "value": "Usar he" },
+  { "type": "Ação", "key": "slot7", "value": "Usar flash" },
+  { "type": "Ação", "key": "slot8", "value": "Usar smoke" },
+  { "type": "Ação", "key": "slot9", "value": "Usar decoy" },
+  { "type": "Ação", "key": "slot10", "value": "Usar molotov" },
+  { "type": "Ação", "key": "slot11", "value": "Usar zeus" },
+  { "type": "Ação", "key": "slot12", "value": "Usar kit médico" },
+  {
+    "type": "Ação",
+    "key": "lastinv",
+    "value": "Trocar para o último equipamento"
+  },
+  { "type": "Ação", "key": "invnext", "value": "Usar próximo equipamento" },
+  { "type": "Ação", "key": "invprev", "value": "Usar equipamento anterior" },
+
+  { "type": "Compras", "key": "buymenu", "value": "Abrir menu de compras" },
+  {
+    "type": "Compras",
+    "key": "autobuy",
+    "value": "Comprar itens automaticamente"
+  },
+  { "type": "Compras", "key": "rebuy", "value": "Repetir compra anterior" },
+  { "type": "Compras", "key": "buy vest", "value": "Comprar colete" },
+  {
+    "type": "Compras",
+    "key": "buy vesthelm",
+    "value": "Comprar colete + capacete"
+  },
+  { "type": "Compras", "key": "buy defuser", "value": "Comprar kit defuser" },
+  { "type": "Compras", "key": "buy smokegrenade", "value": "Comprar smoke" },
+  { "type": "Compras", "key": "buy molotov", "value": "Comprar molotov" },
+  {
+    "type": "Compras",
+    "key": "buy incgrenade",
+    "value": "Comprar granada incendiária"
+  },
+  { "type": "Compras", "key": "buy flashbang", "value": "Comprar flash" },
+  { "type": "Compras", "key": "buy hegrenade", "value": "Comprar he" },
+  { "type": "Compras", "key": "buy ak47", "value": "Comprar ak47" },
+  { "type": "Compras", "key": "buy m4a1", "value": "Comprar m4a1" },
+  { "type": "Compras", "key": "buy ump45", "value": "Comprar ump45" },
+  { "type": "Compras", "key": "buy p250", "value": "Comprar p250" },
+
+  {
+    "type": "Comunicação",
+    "key": "+voicerecord",
+    "value": "Ativar microfone"
+  },
+  {
+    "type": "Comunicação",
+    "key": "player_ping",
+    "value": "Apontar um lugar no mapa"
+  },
+  {
+    "type": "Comunicação",
+    "key": "messagemode",
+    "value": "Ativar chat global"
+  },
+  {
+    "type": "Comunicação",
+    "key": "messagemode2",
+    "value": "Ativar chat do time"
+  },
+
+  {
+    "type": "Comunicação",
+    "key": "+radialradio2",
+    "value": "Mostrar comando de rádio"
+  },
+  { "type": "Comunicação", "key": "mute", "value": "Mutar" },
+  {
+    "type": "Comunicação",
+    "key": "voice_enable 0",
+    "value": "Desligar comunicador"
+  },
+  {
+    "type": "Comunicação",
+    "key": "voice_enable 1",
+    "value": "Ligar comunicador"
+  },
+
+  { "type": "Outros", "key": "cancelselect", "value": "Cancelar" },
+  { "type": "Outros", "key": "toggleconsole", "value": "Abrir console" },
+  {
+    "type": "Outros",
+    "key": "+showscores",
+    "value": "Mostrar tabela de pontuação"
+  },
+  { "type": "Outros", "key": "+lookatweapon", "value": "Mostrar equipamento" },
+  { "type": "Outros", "key": "+spray_menu", "value": "Abrir menu de spray" },
+  { "type": "Outros", "key": "callvote", "value": "Abrir votação" },
+  { "type": "Outros", "key": "teammenu", "value": "Abrir menu de time" },
+  {
+    "type": "Outros",
+    "key": "r_cleardecals",
+    "value": "Limpar marcas de sangue e de balas"
+  }
+]
