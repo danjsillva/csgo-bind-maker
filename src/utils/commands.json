@@ -14,6 +14,11 @@
   { "type": "Movimentação", "key": "+jump", "value": "Pular" },
   { "type": "Movimentação", "key": "+duck", "value": "Agachar" },
   { "type": "Movimentação", "key": "+speed", "value": "Mover devagar" },
+  {
+    "type": "Movimentação",
+    "key": "+jump;-attack;-jump",
+    "value": "Jump throw"
+  },
 
   { "type": "Ação", "key": "+attack", "value": "Atirar" },
   {
@@ -102,29 +107,120 @@
   { "type": "Comunicação", "key": "mute", "value": "Mutar" },
   {
     "type": "Comunicação",
-    "key": "voice_enable 0",
-    "value": "Desligar comunicador"
+    "key": "toggle voice_enable",
+    "value": "Ligar/Desligar comunicador"
   },
   {
     "type": "Comunicação",
-    "key": "voice_enable 1",
-    "value": "Ligar comunicador"
+    "key": "playerradio deathcry Orgasms",
+    "value": "Orgasmo"
   },
 
-  { "type": "Outros", "key": "cancelselect", "value": "Cancelar" },
-  { "type": "Outros", "key": "toggleconsole", "value": "Abrir console" },
+  {
+    "type": "Assistências",
+    "key": "toggle cl_crosshairsize 3 1000",
+    "value": "Crosshair full size"
+  },
+  {
+    "type": "Assistências",
+    "key": "r_cleardecals",
+    "value": "Limpar marcas de sangue e de balas"
+  },
+  {
+    "type": "Assistências",
+    "key": "incrementvar cl_radar_scale 0 1 0.5",
+    "value": "Aumentar/Dimunuir zoom do radar"
+  },
+  {
+    "type": "Assistências",
+    "key": "toggle cl_showloadout",
+    "value": "Mostrar/Ocultar seu inventário"
+  },
+  {
+    "type": "Assistências",
+    "key": "toggle sv_grenade_trajectory",
+    "value": "Mostrar/Ocultar trajetória das granadas"
+  },
+
+  {
+    "type": "Cheats",
+    "key": "toogle sv_cheats",
+    "value": "Ligar/Desligar cheats"
+  },
+  {
+    "type": "Cheats",
+    "key": "sv_cheats 1; noclip",
+    "value": "Ligar/Desligar noclip"
+  },
+  {
+    "type": "Cheats",
+    "key": "sv_cheats 1; toggle r_drawothermodels 1 2",
+    "value": "Ligar/Desligar x-ray"
+  },
+  {
+    "type": "Cheats",
+    "key": "sv_cheats 1; toggle mp_drop_knife_enable",
+    "value": "Habilitar/Desabilitar dropar a faca"
+  },
+
+  {
+    "type": "Bots",
+    "key": "bot_add",
+    "value": "Adicionar um bot"
+  },
+  {
+    "type": "Bots",
+    "key": "bot_place",
+    "value": "Adicionar um bot em um lugar específico"
+  },
+  {
+    "type": "Bots",
+    "key": "bot_add_ct",
+    "value": "Adicionar um bot do lado CT"
+  },
+  {
+    "type": "Bots",
+    "key": "bot_add_t",
+    "value": "Adicionar um bot do lado TR"
+  },
+  {
+    "type": "Bots",
+    "key": "bot_zombie",
+    "value": "Colocar/Remover os bots em modo zombie"
+  },
+  {
+    "type": "Bots",
+    "key": "bot_kill",
+    "value": "Matar todos os bots"
+  },
+  {
+    "type": "Bots",
+    "key": "bot_kick",
+    "value": "Kickar todos os bots"
+  },
+
+  {
+    "type": "Outros",
+    "key": "+lookatweapon",
+    "value": "Mostrar/Ocultar seu equipamento"
+  },
+  {
+    "type": "Outros",
+    "key": "incrementvar cl_teamid_overhead_mode 0 2 1",
+    "value": "Mostrar/Ocultar equipamentos da sua equipe"
+  },
+  {
+    "type": "Outros",
+    "key": "toggle cl_righthand",
+    "value": "Trocar arma de mão"
+  },
+  { "type": "Outros", "key": "callvote", "value": "Abrir votação" },
   {
     "type": "Outros",
     "key": "+showscores",
     "value": "Mostrar tabela de pontuação"
   },
-  { "type": "Outros", "key": "+lookatweapon", "value": "Mostrar equipamento" },
   { "type": "Outros", "key": "+spray_menu", "value": "Abrir menu de spray" },
-  { "type": "Outros", "key": "callvote", "value": "Abrir votação" },
   { "type": "Outros", "key": "teammenu", "value": "Abrir menu de time" },
-  {
-    "type": "Outros",
-    "key": "r_cleardecals",
-    "value": "Limpar marcas de sangue e de balas"
-  }
+  { "type": "Outros", "key": "toggleconsole", "value": "Abrir console" }
 ]
