@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import classNames from "classnames";
+
 import DevelopedBy from "./components/DevelopedBy";
 
 import commandsList from "./utils/commands.json";
@@ -6,20 +8,22 @@ import keysList from "./utils/keys.json";
 
 export default function App() {
   const [form, setForm] = useState({ key: "", command: "" });
-  const [commands, setCommands] = useState([]);
+  const [tabIndex, setTabIndex] = useState(0);
+  const [copyButtonText, setCopyButtonText] = useState("Copiar");
+  const [binds, setBinds] = useState([]);
   const [result, setResult] = useState("");
 
   useEffect(() => {
     setResult(
-      [...new Set(commands.map((item) => item.command[0].type))]
+      [...new Set(binds.map((bind) => bind.command[0].type))]
         .map((type) =>
-          commands
-            .filter((item) => item.command[0].type === type)
+          binds
+            .filter((bind) => bind.command[0].type === type)
             .reduce(
-              (result, item) =>
-                (result += `bind "${item.key.key}" "${item.command
+              (result, bind) =>
+                (result += `bind "${bind.key.key}" "${bind.command
                   .map((command) => command.key)
-                  .join("; ")}" // ${item.command
+                  .join("; ")}" // ${bind.command
                   .map((command) => command.value)
                   .join("; ")}\n`),
               `// ${type}\n`
@@ -27,40 +31,52 @@ export default function App() {
         )
         .join("\n")
     );
-  }, [commands]);
+  }, [binds]);
 
   const onFormSubmit = (event) => {
     event.preventDefault();
 
-    if (commands.some((item) => item.key.key === form.key)) {
-      setCommands(
-        commands.map((item) => {
-          if (item.key.key === form.key) {
-            item = {
-              ...item,
+    if (binds.some((bind) => bind.key.key === form.key)) {
+      setBinds(
+        binds.map((bind) => {
+          if (bind.key.key === form.key) {
+            bind = {
+              ...bind,
               command: [
                 ...new Set([
-                  ...item.command,
-                  commandsList.find((item) => item.key === form.command),
+                  ...bind.command,
+                  commandsList.find((bind) => bind.key === form.command),
                 ]),
               ],
             };
           }
 
-          return item;
+          return bind;
         })
       );
     } else {
-      setCommands([
-        ...commands,
+      setBinds([
+        ...binds,
         {
-          key: keysList.find((item) => item.key === form.key),
-          command: [commandsList.find((item) => item.key === form.command)],
+          key: keysList.find((key) => key.key === form.key),
+          command: [
+            commandsList.find((command) => command.key === form.command),
+          ],
         },
       ]);
     }
 
     setForm({ ...form, command: "" });
+  };
+
+  const onClickCopyHandle = () => {
+    navigator.clipboard.writeText(result);
+
+    setCopyButtonText("Copiado com sucesso!");
+  };
+
+  const onMouseLeaveCopyHandle = () => {
+    setTimeout(() => setCopyButtonText("Copiar"), 1000);
   };
 
   return (
@@ -83,19 +99,17 @@ export default function App() {
                   Selecione
                 </option>
 
-                {[...new Set(keysList.map((keysList) => keysList.type))].map(
-                  (type) => (
-                    <optgroup key={type} label={type}>
-                      {keysList
-                        .filter((key) => key.type === type)
-                        .map((key) => (
-                          <option key={key.key} value={key.key}>
-                            {key.value}
-                          </option>
-                        ))}
-                    </optgroup>
-                  )
-                )}
+                {[...new Set(keysList.map((key) => key.type))].map((type) => (
+                  <optgroup key={type} label={type}>
+                    {keysList
+                      .filter((key) => key.type === type)
+                      .map((key) => (
+                        <option key={key.key} value={key.key}>
+                          {key.value}
+                        </option>
+                      ))}
+                  </optgroup>
+                ))}
               </select>
 
               <div className="form-text">
@@ -116,21 +130,19 @@ export default function App() {
                   Selecione
                 </option>
 
-                {[
-                  ...new Set(
-                    commandsList.map((commandsList) => commandsList.type)
-                  ),
-                ].map((type) => (
-                  <optgroup key={type} label={type}>
-                    {commandsList
-                      .filter((command) => command.type === type)
-                      .map((command) => (
-                        <option key={command.key} value={command.key}>
-                          {command.value}
-                        </option>
-                      ))}
-                  </optgroup>
-                ))}
+                {[...new Set(commandsList.map((command) => command.type))].map(
+                  (type) => (
+                    <optgroup key={type} label={type}>
+                      {commandsList
+                        .filter((command) => command.type === type)
+                        .map((command) => (
+                          <option key={command.key} value={command.key}>
+                            {command.value}
+                          </option>
+                        ))}
+                    </optgroup>
+                  )
+                )}
               </select>
             </div>
 
@@ -138,7 +150,7 @@ export default function App() {
               <button
                 type="submit"
                 disabled={!form.key || !form.command}
-                className="btn btn-primary"
+                className="btn btn-danger"
               >
                 Adicionar
               </button>
@@ -147,21 +159,73 @@ export default function App() {
         </aside>
 
         <article className="col-9">
-          <textarea
-            name="result"
-            rows="20"
-            readOnly
-            value={result}
-            className="form-control"
-          ></textarea>
-
-          <div className="d-flex justify-content-between align-items-center">
+          <div className="btn-group mb-3">
             <button
-              onClick={(e) => navigator.clipboard.writeText(result)}
-              disabled={!commands.length}
-              className="btn btn-outline"
+              className={classNames("btn", "btn-danger", {
+                active: tabIndex === 0,
+              })}
+              onClick={(e) => setTabIndex(0)}
             >
-              Copiar
+              Modo texto
+            </button>
+            <button
+              className={classNames("btn btn-danger", {
+                active: tabIndex === 1,
+              })}
+              onClick={(e) => setTabIndex(1)}
+            >
+              Modo tabela
+            </button>
+          </div>
+
+          {tabIndex === 0 ? (
+            <textarea
+              name="result"
+              rows="24"
+              readOnly
+              value={result}
+              className="form-control code"
+            ></textarea>
+          ) : (
+            <div className="">
+              <div className="card p-3">
+                <div className="row">
+                  <div className="col-2">
+                    <dt>Tecla ou botão</dt>
+                  </div>
+                  <div className="col-3">
+                    <dt>Comando</dt>
+                  </div>
+                  <div className="col-7">
+                    <dt>Descrição</dt>
+                  </div>
+                </div>
+              </div>
+
+              {binds.map((bind) => (
+                <div className="card p-3 mt-1">
+                  <div className="row">
+                    <div className="col-2">{bind.key.key}</div>
+                    <div className="col-3">
+                      {bind.command.map((command) => command.key).join("; ")}
+                    </div>
+                    <div className="col-7">
+                      {bind.command.map((command) => command.value).join("; ")}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+
+          <div className="d-flex justify-content-between align-items-center mt-3">
+            <button
+              onClick={onClickCopyHandle}
+              onMouseLeave={onMouseLeaveCopyHandle}
+              disabled={!binds.length}
+              className="btn btn-light"
+            >
+              {copyButtonText}
             </button>
 
             <DevelopedBy />
