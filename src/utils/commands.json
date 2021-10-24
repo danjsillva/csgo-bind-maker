@@ -34,14 +34,14 @@
   { "type": "Ação", "key": "slot2", "value": "Usar arma secundária" },
   { "type": "Ação", "key": "slot3", "value": "Usar faca" },
   { "type": "Ação", "key": "slot4", "value": "Usar granadas" },
-  { "type": "Ação", "key": "slot5", "value": "Usar c4" },
-  { "type": "Ação", "key": "slot6", "value": "Usar he" },
-  { "type": "Ação", "key": "slot7", "value": "Usar flash" },
-  { "type": "Ação", "key": "slot8", "value": "Usar smoke" },
-  { "type": "Ação", "key": "slot9", "value": "Usar decoy" },
-  { "type": "Ação", "key": "slot10", "value": "Usar molotov" },
-  { "type": "Ação", "key": "slot11", "value": "Usar zeus" },
-  { "type": "Ação", "key": "slot12", "value": "Usar kit médico" },
+  { "type": "Ação", "key": "slot5", "value": "Usar C4" },
+  { "type": "Ação", "key": "slot6", "value": "Usar HE" },
+  { "type": "Ação", "key": "slot7", "value": "Usar Flashbang" },
+  { "type": "Ação", "key": "slot8", "value": "Usar Smoke" },
+  { "type": "Ação", "key": "slot9", "value": "Usar Decoy" },
+  { "type": "Ação", "key": "slot10", "value": "Usar Molotov" },
+  { "type": "Ação", "key": "slot11", "value": "Usar Zeus" },
+  { "type": "Ação", "key": "slot12", "value": "Usar Kit médico" },
   {
     "type": "Ação",
     "key": "lastinv",
@@ -57,26 +57,28 @@
     "value": "Comprar itens automaticamente"
   },
   { "type": "Compras", "key": "rebuy", "value": "Repetir compra anterior" },
-  { "type": "Compras", "key": "buy vest", "value": "Comprar colete" },
+  { "type": "Compras", "key": "buy vest", "value": "Comprar Colete" },
   {
     "type": "Compras",
     "key": "buy vesthelm",
-    "value": "Comprar colete + capacete"
+    "value": "Comprar Colete + Capacete"
   },
-  { "type": "Compras", "key": "buy defuser", "value": "Comprar kit defuser" },
-  { "type": "Compras", "key": "buy smokegrenade", "value": "Comprar smoke" },
-  { "type": "Compras", "key": "buy molotov", "value": "Comprar molotov" },
+  { "type": "Compras", "key": "buy defuser", "value": "Comprar Kit defuser" },
+  { "type": "Compras", "key": "buy smokegrenade", "value": "Comprar Smoke" },
+  { "type": "Compras", "key": "buy molotov", "value": "Comprar Molotov" },
   {
     "type": "Compras",
     "key": "buy incgrenade",
-    "value": "Comprar granada incendiária"
+    "value": "Comprar Granada incendiária"
   },
-  { "type": "Compras", "key": "buy flashbang", "value": "Comprar flash" },
-  { "type": "Compras", "key": "buy hegrenade", "value": "Comprar he" },
-  { "type": "Compras", "key": "buy ak47", "value": "Comprar ak47" },
-  { "type": "Compras", "key": "buy m4a1", "value": "Comprar m4a1" },
-  { "type": "Compras", "key": "buy ump45", "value": "Comprar ump45" },
-  { "type": "Compras", "key": "buy p250", "value": "Comprar p250" },
+  { "type": "Compras", "key": "buy flashbang", "value": "Comprar Flashbang" },
+  { "type": "Compras", "key": "buy hegrenade", "value": "Comprar HE" },
+  { "type": "Compras", "key": "buy ak47", "value": "Comprar AK-47" },
+  { "type": "Compras", "key": "buy m4a1", "value": "Comprar M4A4/M4A1" },
+  { "type": "Compras", "key": "buy awp", "value": "Comprar AWP" },
+  { "type": "Compras", "key": "buy ump45", "value": "Comprar UMP45" },
+  { "type": "Compras", "key": "buy p250", "value": "Comprar P250" },
+  { "type": "Compras", "key": "buy deagle", "value": "Comprar Desert Eagle" },
 
   {
     "type": "Comunicação",
@@ -91,29 +93,88 @@
   {
     "type": "Comunicação",
     "key": "messagemode",
-    "value": "Ativar chat global"
+    "value": "Enviar mensagem no chat global"
   },
   {
     "type": "Comunicação",
     "key": "messagemode2",
-    "value": "Ativar chat do time"
+    "value": "Enviar mensagem no chat do time"
   },
-
-  {
-    "type": "Comunicação",
-    "key": "+radialradio2",
-    "value": "Mostrar comando de rádio"
-  },
-  { "type": "Comunicação", "key": "mute", "value": "Mutar" },
   {
     "type": "Comunicação",
     "key": "toggle voice_enable",
     "value": "Ligar/Desligar comunicador"
   },
+  { "type": "Comunicação", "key": "mute", "value": "Mutar" },
+  {
+    "type": "Comunicação",
+    "key": "+radialradio",
+    "value": "Mostrar menu de mesangens de rádio 1"
+  },
+  {
+    "type": "Comunicação",
+    "key": "+radialradio2",
+    "value": "Mostrar menu de mesangens de rádio 2"
+  },
+  {
+    "type": "Comunicação",
+    "key": "+radialradio3",
+    "value": "Mostrar menu de mesangens de rádio 3"
+  },
   {
     "type": "Comunicação",
     "key": "playerradio deathcry Orgasms",
-    "value": "Orgasmo"
+    "value": "Enviar mensagem de rário: Orgasmo!"
+  },
+  {
+    "type": "Comunicação",
+    "key": "getout",
+    "value": "Enviar mensagem de rário: Vai explodir!"
+  },
+  {
+    "type": "Comunicação",
+    "key": "go",
+    "value": "Enviar mensagem de rário: Vai! Vai! Vai!"
+  },
+  {
+    "type": "Comunicação",
+    "key": "cheer",
+    "value": "Enviar mensagem de rário: Viva!"
+  },
+  {
+    "type": "Comunicação",
+    "key": "needrop",
+    "value": "Enviar mensagem de rário: Preciso de uma arma."
+  },
+  {
+    "type": "Comunicação",
+    "key": "thanks",
+    "value": "Enviar mensagem de rário: Obrigado!"
+  },
+  {
+    "type": "Comunicação",
+    "key": "compliment",
+    "value": "Enviar mensagem de rário: Boa!"
+  },
+  {
+    "type": "Comunicação",
+    "key": "roger",
+    "value": "Enviar mensagem de rário: Afirmativo."
+  },
+  {
+    "type": "Comunicação",
+    "key": "negative",
+    "value": "Enviar mensagem de rário: Negativo."
+  },
+  {
+    "type": "Comunicação",
+    "key": "go_a",
+    "value": "Enviar mensagem de rário: Alvo de explosão A!"
+  },
+  {
+    "type": "Comunicação",
+    "key": "go_b",
+    "value": "Enviar mensagem de rário: Alvo de explosão B!"
   },
 
   {
@@ -130,11 +191,6 @@
     "type": "Assistências",
     "key": "incrementvar cl_radar_scale 0 1 0.5",
     "value": "Aumentar/Dimunuir zoom do radar"
-  },
-  {
-    "type": "Assistências",
-    "key": "toggle cl_showloadout",
-    "value": "Mostrar/Ocultar seu inventário"
   },
   {
     "type": "Assistências",
@@ -201,25 +257,25 @@
 
   {
     "type": "Outros",
+    "key": "toggle cl_righthand",
+    "value": "Trocar arma de mão"
+  },
+  {
+    "type": "Outros",
     "key": "+lookatweapon",
-    "value": "Mostrar/Ocultar seu equipamento"
+    "value": "Mostrar sua arma/faca"
+  },
+  {
+    "type": "Outros",
+    "key": "toggle cl_showloadout",
+    "value": "Mostrar/Ocultar seu inventário"
   },
   {
     "type": "Outros",
     "key": "incrementvar cl_teamid_overhead_mode 0 2 1",
     "value": "Mostrar/Ocultar equipamentos da sua equipe"
   },
-  {
-    "type": "Outros",
-    "key": "toggle cl_righthand",
-    "value": "Trocar arma de mão"
-  },
   { "type": "Outros", "key": "callvote", "value": "Abrir votação" },
-  {
-    "type": "Outros",
-    "key": "+showscores",
-    "value": "Mostrar tabela de pontuação"
-  },
   { "type": "Outros", "key": "+spray_menu", "value": "Abrir menu de spray" },
   { "type": "Outros", "key": "teammenu", "value": "Abrir menu de time" },
   { "type": "Outros", "key": "toggleconsole", "value": "Abrir console" }
