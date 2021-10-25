@@ -1,7 +1,7 @@
 import React from "react";
 import { FiHeart } from "react-icons/fi";
 
-const DevelopedBy = () => {
+export default function DevelopedBy() {
   return (
     <small className="text-muted">
       Developed with <FiHeart /> by{" "}
@@ -15,6 +15,4 @@ const DevelopedBy = () => {
       </a>
     </small>
   );
-};
-
-export default DevelopedBy;
+}

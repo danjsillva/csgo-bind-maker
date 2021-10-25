@@ -1,282 +1,338 @@
 [
-  { "type": "Movimentação", "key": "+forward", "value": "Mover para frente" },
-  { "type": "Movimentação", "key": "+back", "value": "Mover para trás" },
   {
     "type": "Movimentação",
-    "key": "+moveleft",
-    "value": "Mover para a esquerda"
+    "value": "+forward",
+    "description": "Mover para frente"
   },
   {
     "type": "Movimentação",
-    "key": "+moveright",
-    "value": "Mover para a direita"
+    "value": "+back",
+    "description": "Mover para trás"
   },
-  { "type": "Movimentação", "key": "+jump", "value": "Pular" },
-  { "type": "Movimentação", "key": "+duck", "value": "Agachar" },
-  { "type": "Movimentação", "key": "+speed", "value": "Mover devagar" },
   {
     "type": "Movimentação",
-    "key": "+jump;-attack;-jump",
-    "value": "Jump throw"
+    "value": "+moveleft",
+    "description": "Mover para a esquerda"
+  },
+  {
+    "type": "Movimentação",
+    "value": "+moveright",
+    "description": "Mover para a direita"
+  },
+  { "type": "Movimentação", "value": "+jump", "description": "Pular" },
+  { "type": "Movimentação", "value": "+duck", "description": "Agachar" },
+  { "type": "Movimentação", "value": "+speed", "description": "Mover devagar" },
+  {
+    "type": "Movimentação",
+    "value": "+jump;-attack;-jump",
+    "description": "Jump throw"
   },
 
-  { "type": "Ação", "key": "+attack", "value": "Atirar" },
+  { "type": "Ação", "value": "+attack", "description": "Atirar" },
   {
     "type": "Ação",
-    "key": "+attack2",
-    "value": "Usar scope/Trocar modo de disparo"
+    "value": "+attack2",
+    "description": "Usar scope/Trocar modo de disparo"
   },
-  { "type": "Ação", "key": "+reload", "value": "Recarregar arma" },
+  { "type": "Ação", "value": "+reload", "description": "Recarregar arma" },
 
-  { "type": "Ação", "key": "+use", "value": "Usar/Pegar/Abrir" },
-  { "type": "Ação", "key": "drop", "value": "Soltar equipamento" },
-  { "type": "Ação", "key": "slot1", "value": "Usar arma principal" },
-  { "type": "Ação", "key": "slot2", "value": "Usar arma secundária" },
-  { "type": "Ação", "key": "slot3", "value": "Usar faca" },
-  { "type": "Ação", "key": "slot4", "value": "Usar granadas" },
-  { "type": "Ação", "key": "slot5", "value": "Usar C4" },
-  { "type": "Ação", "key": "slot6", "value": "Usar HE" },
-  { "type": "Ação", "key": "slot7", "value": "Usar Flashbang" },
-  { "type": "Ação", "key": "slot8", "value": "Usar Smoke" },
-  { "type": "Ação", "key": "slot9", "value": "Usar Decoy" },
-  { "type": "Ação", "key": "slot10", "value": "Usar Molotov" },
-  { "type": "Ação", "key": "slot11", "value": "Usar Zeus" },
-  { "type": "Ação", "key": "slot12", "value": "Usar Kit médico" },
+  { "type": "Ação", "value": "+use", "description": "Usar/Pegar/Abrir" },
+  { "type": "Ação", "value": "drop", "description": "Soltar equipamento" },
+  { "type": "Ação", "value": "slot1", "description": "Usar arma principal" },
+  { "type": "Ação", "value": "slot2", "description": "Usar arma secundária" },
+  { "type": "Ação", "value": "slot3", "description": "Usar faca" },
+  { "type": "Ação", "value": "slot4", "description": "Usar granadas" },
+  { "type": "Ação", "value": "slot5", "description": "Usar C4" },
+  { "type": "Ação", "value": "slot6", "description": "Usar HE" },
+  { "type": "Ação", "value": "slot7", "description": "Usar Flashbang" },
+  { "type": "Ação", "value": "slot8", "description": "Usar Smoke" },
+  { "type": "Ação", "value": "slot9", "description": "Usar Decoy" },
+  { "type": "Ação", "value": "slot10", "description": "Usar Molotov" },
+  { "type": "Ação", "value": "slot11", "description": "Usar Zeus" },
+  { "type": "Ação", "value": "slot12", "description": "Usar Kit médico" },
   {
     "type": "Ação",
-    "key": "lastinv",
-    "value": "Trocar para o último equipamento"
+    "value": "lastinv",
+    "description": "Trocar para o último equipamento"
   },
-  { "type": "Ação", "key": "invnext", "value": "Usar próximo equipamento" },
-  { "type": "Ação", "key": "invprev", "value": "Usar equipamento anterior" },
+  {
+    "type": "Ação",
+    "value": "invnext",
+    "description": "Usar próximo equipamento"
+  },
+  {
+    "type": "Ação",
+    "value": "invprev",
+    "description": "Usar equipamento anterior"
+  },
 
-  { "type": "Compras", "key": "buymenu", "value": "Abrir menu de compras" },
   {
     "type": "Compras",
-    "key": "autobuy",
-    "value": "Comprar itens automaticamente"
+    "value": "buymenu",
+    "description": "Abrir menu de compras"
   },
-  { "type": "Compras", "key": "rebuy", "value": "Repetir compra anterior" },
-  { "type": "Compras", "key": "buy vest", "value": "Comprar Colete" },
   {
     "type": "Compras",
-    "key": "buy vesthelm",
-    "value": "Comprar Colete + Capacete"
+    "value": "autobuy",
+    "description": "Comprar itens automaticamente"
   },
-  { "type": "Compras", "key": "buy defuser", "value": "Comprar Kit defuser" },
-  { "type": "Compras", "key": "buy smokegrenade", "value": "Comprar Smoke" },
-  { "type": "Compras", "key": "buy molotov", "value": "Comprar Molotov" },
   {
     "type": "Compras",
-    "key": "buy incgrenade",
-    "value": "Comprar Granada incendiária"
+    "value": "rebuy",
+    "description": "Repetir compra anterior"
   },
-  { "type": "Compras", "key": "buy flashbang", "value": "Comprar Flashbang" },
-  { "type": "Compras", "key": "buy hegrenade", "value": "Comprar HE" },
-  { "type": "Compras", "key": "buy ak47", "value": "Comprar AK-47" },
-  { "type": "Compras", "key": "buy m4a1", "value": "Comprar M4A4/M4A1" },
-  { "type": "Compras", "key": "buy awp", "value": "Comprar AWP" },
-  { "type": "Compras", "key": "buy ump45", "value": "Comprar UMP45" },
-  { "type": "Compras", "key": "buy p250", "value": "Comprar P250" },
-  { "type": "Compras", "key": "buy deagle", "value": "Comprar Desert Eagle" },
+  { "type": "Compras", "value": "buy vest", "description": "Comprar Colete" },
+  {
+    "type": "Compras",
+    "value": "buy vesthelm",
+    "description": "Comprar Colete + Capacete"
+  },
+  {
+    "type": "Compras",
+    "value": "buy defuser",
+    "description": "Comprar Kit defuser"
+  },
+  {
+    "type": "Compras",
+    "value": "buy smokegrenade",
+    "description": "Comprar Smoke"
+  },
+  {
+    "type": "Compras",
+    "value": "buy molotov",
+    "description": "Comprar Molotov"
+  },
+  {
+    "type": "Compras",
+    "value": "buy incgrenade",
+    "description": "Comprar Granada incendiária"
+  },
+  {
+    "type": "Compras",
+    "value": "buy flashbang",
+    "description": "Comprar Flashbang"
+  },
+  { "type": "Compras", "value": "buy hegrenade", "description": "Comprar HE" },
+  { "type": "Compras", "value": "buy ak47", "description": "Comprar AK-47" },
+  {
+    "type": "Compras",
+    "value": "buy m4a1",
+    "description": "Comprar M4A4/M4A1"
+  },
+  { "type": "Compras", "value": "buy awp", "description": "Comprar AWP" },
+  { "type": "Compras", "value": "buy ump45", "description": "Comprar UMP45" },
+  { "type": "Compras", "value": "buy p250", "description": "Comprar P250" },
+  {
+    "type": "Compras",
+    "value": "buy deagle",
+    "description": "Comprar Desert Eagle"
+  },
 
   {
     "type": "Comunicação",
-    "key": "+voicerecord",
-    "value": "Ativar microfone"
+    "value": "+voicerecord",
+    "description": "Ativar microfone"
   },
   {
     "type": "Comunicação",
-    "key": "player_ping",
-    "value": "Apontar um lugar no mapa"
+    "value": "player_ping",
+    "description": "Apontar um lugar no mapa"
   },
   {
     "type": "Comunicação",
-    "key": "messagemode",
-    "value": "Enviar mensagem no chat global"
+    "value": "messagemode",
+    "description": "Enviar mensagem no chat global"
   },
   {
     "type": "Comunicação",
-    "key": "messagemode2",
-    "value": "Enviar mensagem no chat do time"
+    "value": "messagemode2",
+    "description": "Enviar mensagem no chat do time"
   },
   {
     "type": "Comunicação",
-    "key": "toggle voice_enable",
-    "value": "Ligar/Desligar comunicador"
+    "value": "toggle voice_enable",
+    "description": "Ligar/Desligar comunicador"
   },
-  { "type": "Comunicação", "key": "mute", "value": "Mutar" },
+  { "type": "Comunicação", "value": "mute", "description": "Mutar" },
   {
     "type": "Comunicação",
-    "key": "+radialradio",
-    "value": "Mostrar menu de mesangens de rádio 1"
-  },
-  {
-    "type": "Comunicação",
-    "key": "+radialradio2",
-    "value": "Mostrar menu de mesangens de rádio 2"
+    "value": "+radialradio",
+    "description": "Mostrar menu de mesangens de rádio 1"
   },
   {
     "type": "Comunicação",
-    "key": "+radialradio3",
-    "value": "Mostrar menu de mesangens de rádio 3"
+    "value": "+radialradio2",
+    "description": "Mostrar menu de mesangens de rádio 2"
   },
   {
     "type": "Comunicação",
-    "key": "playerradio deathcry Orgasms",
-    "value": "Enviar mensagem de rário: Orgasmo!"
+    "value": "+radialradio3",
+    "description": "Mostrar menu de mesangens de rádio 3"
   },
   {
     "type": "Comunicação",
-    "key": "getout",
-    "value": "Enviar mensagem de rário: Vai explodir!"
+    "value": "playerradio deathcry Orgasms",
+    "description": "Enviar mensagem de rário: Orgasmo!"
   },
   {
     "type": "Comunicação",
-    "key": "go",
-    "value": "Enviar mensagem de rário: Vai! Vai! Vai!"
+    "value": "getout",
+    "description": "Enviar mensagem de rário: Vai explodir!"
   },
   {
     "type": "Comunicação",
-    "key": "cheer",
-    "value": "Enviar mensagem de rário: Viva!"
+    "value": "go",
+    "description": "Enviar mensagem de rário: Vai! Vai! Vai!"
   },
   {
     "type": "Comunicação",
-    "key": "needrop",
-    "value": "Enviar mensagem de rário: Preciso de uma arma."
+    "value": "cheer",
+    "description": "Enviar mensagem de rário: Viva!"
   },
   {
     "type": "Comunicação",
-    "key": "thanks",
-    "value": "Enviar mensagem de rário: Obrigado!"
+    "value": "needrop",
+    "description": "Enviar mensagem de rário: Preciso de uma arma."
   },
   {
     "type": "Comunicação",
-    "key": "compliment",
-    "value": "Enviar mensagem de rário: Boa!"
+    "value": "thanks",
+    "description": "Enviar mensagem de rário: Obrigado!"
   },
   {
     "type": "Comunicação",
-    "key": "roger",
-    "value": "Enviar mensagem de rário: Afirmativo."
+    "value": "compliment",
+    "description": "Enviar mensagem de rário: Boa!"
   },
   {
     "type": "Comunicação",
-    "key": "negative",
-    "value": "Enviar mensagem de rário: Negativo."
+    "value": "roger",
+    "description": "Enviar mensagem de rário: Afirmativo."
   },
   {
     "type": "Comunicação",
-    "key": "go_a",
-    "value": "Enviar mensagem de rário: Alvo de explosão A!"
+    "value": "negative",
+    "description": "Enviar mensagem de rário: Negativo."
   },
   {
     "type": "Comunicação",
-    "key": "go_b",
-    "value": "Enviar mensagem de rário: Alvo de explosão B!"
+    "value": "go_a",
+    "description": "Enviar mensagem de rário: Alvo de explosão A!"
+  },
+  {
+    "type": "Comunicação",
+    "value": "go_b",
+    "description": "Enviar mensagem de rário: Alvo de explosão B!"
   },
 
   {
     "type": "Assistências",
-    "key": "toggle cl_crosshairsize 3 1000",
-    "value": "Crosshair full size"
+    "value": "toggle cl_crosshairsize 3 1000",
+    "description": "Crosshair full size"
   },
   {
     "type": "Assistências",
-    "key": "r_cleardecals",
-    "value": "Limpar marcas de sangue e de balas"
+    "value": "r_cleardecals",
+    "description": "Limpar marcas de sangue e de balas"
   },
   {
     "type": "Assistências",
-    "key": "incrementvar cl_radar_scale 0 1 0.5",
-    "value": "Aumentar/Dimunuir zoom do radar"
+    "value": "incrementvar cl_radar_scale 0 1 0.5",
+    "description": "Aumentar/Dimunuir zoom do radar"
   },
   {
     "type": "Assistências",
-    "key": "toggle sv_grenade_trajectory",
-    "value": "Mostrar/Ocultar trajetória das granadas"
+    "value": "toggle sv_grenade_trajectory",
+    "description": "Mostrar/Ocultar trajetória das granadas"
   },
 
   {
     "type": "Cheats",
-    "key": "toogle sv_cheats",
-    "value": "Ligar/Desligar cheats"
+    "value": "toogle sv_cheats",
+    "description": "Ligar/Desligar cheats"
   },
   {
     "type": "Cheats",
-    "key": "sv_cheats 1; noclip",
-    "value": "Ligar/Desligar noclip"
+    "value": "sv_cheats 1; noclip",
+    "description": "Ligar/Desligar noclip"
   },
   {
     "type": "Cheats",
-    "key": "sv_cheats 1; toggle r_drawothermodels 1 2",
-    "value": "Ligar/Desligar x-ray"
+    "value": "sv_cheats 1; toggle r_drawothermodels 1 2",
+    "description": "Ligar/Desligar x-ray"
   },
   {
     "type": "Cheats",
-    "key": "sv_cheats 1; toggle mp_drop_knife_enable",
-    "value": "Habilitar/Desabilitar dropar a faca"
+    "value": "sv_cheats 1; toggle mp_drop_knife_enable",
+    "description": "Habilitar/Desabilitar dropar a faca"
   },
 
   {
     "type": "Bots",
-    "key": "bot_add",
-    "value": "Adicionar um bot"
+    "value": "bot_add",
+    "description": "Adicionar um bot"
   },
   {
     "type": "Bots",
-    "key": "bot_place",
-    "value": "Adicionar um bot em um lugar específico"
+    "value": "bot_place",
+    "description": "Adicionar um bot em um lugar específico"
   },
   {
     "type": "Bots",
-    "key": "bot_add_ct",
-    "value": "Adicionar um bot do lado CT"
+    "value": "bot_add_ct",
+    "description": "Adicionar um bot do lado CT"
   },
   {
     "type": "Bots",
-    "key": "bot_add_t",
-    "value": "Adicionar um bot do lado TR"
+    "value": "bot_add_t",
+    "description": "Adicionar um bot do lado TR"
   },
   {
     "type": "Bots",
-    "key": "bot_zombie",
-    "value": "Colocar/Remover os bots em modo zombie"
+    "value": "bot_zombie",
+    "description": "Colocar/Remover os bots em modo zombie"
   },
   {
     "type": "Bots",
-    "key": "bot_kill",
-    "value": "Matar todos os bots"
+    "value": "bot_kill",
+    "description": "Matar todos os bots"
   },
   {
     "type": "Bots",
-    "key": "bot_kick",
-    "value": "Kickar todos os bots"
+    "value": "bot_kick",
+    "description": "Kickar todos os bots"
   },
 
   {
     "type": "Outros",
-    "key": "toggle cl_righthand",
-    "value": "Trocar arma de mão"
+    "value": "toggle cl_righthand",
+    "description": "Trocar arma de mão"
   },
   {
     "type": "Outros",
-    "key": "+lookatweapon",
-    "value": "Mostrar sua arma/faca"
+    "value": "+lookatweapon",
+    "description": "Mostrar sua arma/faca"
   },
   {
     "type": "Outros",
-    "key": "toggle cl_showloadout",
-    "value": "Mostrar/Ocultar seu inventário"
+    "value": "toggle cl_showloadout",
+    "description": "Mostrar/Ocultar seu inventário"
   },
   {
     "type": "Outros",
-    "key": "incrementvar cl_teamid_overhead_mode 0 2 1",
-    "value": "Mostrar/Ocultar equipamentos da sua equipe"
+    "value": "incrementvar cl_teamid_overhead_mode 0 2 1",
+    "description": "Mostrar/Ocultar equipamentos da sua equipe"
   },
-  { "type": "Outros", "key": "callvote", "value": "Abrir votação" },
-  { "type": "Outros", "key": "+spray_menu", "value": "Abrir menu de spray" },
-  { "type": "Outros", "key": "teammenu", "value": "Abrir menu de time" },
-  { "type": "Outros", "key": "toggleconsole", "value": "Abrir console" }
+  { "type": "Outros", "value": "callvote", "description": "Abrir votação" },
+  {
+    "type": "Outros",
+    "value": "+spray_menu",
+    "description": "Abrir menu de spray"
+  },
+  {
+    "type": "Outros",
+    "value": "teammenu",
+    "description": "Abrir menu de time"
+  },
+  { "type": "Outros", "value": "toggleconsole", "description": "Abrir console" }
 ]
