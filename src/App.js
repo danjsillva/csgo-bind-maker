@@ -3,7 +3,6 @@ import { useState } from "react";
 import Form from "./components/Form";
 import ModeSwitch from "./components/ModeSwitch";
 import Textarea from "./components/Textarea";
-import Table from "./components/Table";
 import Keyboard from "./components/Keyboard";
 import DevelopedBy from "./components/DevelopedBy";
 
@@ -25,7 +24,7 @@ export default function App() {
 
   return (
     <main className="container">
-      <section className="row mt-5">
+      <section className="row pt-5">
         <aside className="col-3">
           <h1>CSGO Bind Maker</h1>
 
@@ -45,16 +44,14 @@ export default function App() {
             />
           )}
 
-          {tabIndex === 1 && <Table binds={binds} />}
-
-          {tabIndex === 2 && <Keyboard binds={binds} />}
+          {tabIndex === 1 && <Keyboard binds={binds} />}
 
           <div className="d-flex justify-content-between align-items-center mt-3">
             <button
               onClick={onClickCopyHandle}
               onMouseLeave={onMouseLeaveCopyHandle}
               disabled={!binds.length}
-              className="btn btn-light"
+              className="btn btn-dark"
             >
               {copyButtonText}
             </button>

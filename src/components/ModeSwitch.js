@@ -11,6 +11,7 @@ export default function ModeSwitch({ tabIndex, onUpdateTabIndex }) {
       >
         Modo texto
       </button>
+
       <button
         className={classNames("btn btn-danger", {
           active: tabIndex === 1,
@@ -18,14 +19,6 @@ export default function ModeSwitch({ tabIndex, onUpdateTabIndex }) {
         onClick={(e) => onUpdateTabIndex(1)}
       >
         Modo tabela
-      </button>
-      <button
-        className={classNames("btn btn-danger", {
-          active: tabIndex === 2,
-        })}
-        onClick={(e) => onUpdateTabIndex(2)}
-      >
-        Modo mapa
       </button>
     </div>
   );

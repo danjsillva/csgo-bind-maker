@@ -1,14 +1,14 @@
 import React from "react";
-import { FiHeart } from "react-icons/fi";
+import { FaHeart } from "react-icons/fa";
 
 export default function DevelopedBy() {
   return (
-    <small className="text-muted">
-      Developed with <FiHeart /> by{" "}
+    <small className="text-light">
+      Developed with <FaHeart /> by{" "}
       <a
         href="https://www.instagram.com/danjsillva/"
         target="blank"
-        className="text-dark"
+        className="text-light"
         style={{ textDecoration: "none" }}
       >
         Daniel Silva

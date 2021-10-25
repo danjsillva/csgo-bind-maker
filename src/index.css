@@ -9,6 +9,21 @@
   border-color: #dc3545 !important;
 }
 
+textarea,
+textarea:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+html,
+body {
+  height: 100vh;
+  background-color: #212529;
+  background-image: url("https://i.pinimg.com/originals/ff/c3/8d/ffc38d9bce22d7a9eaa07b890e3af1a2.jpg");
+  color: #ffffff !important;
+}
+
 h1 {
   font-weight: bold;
 }

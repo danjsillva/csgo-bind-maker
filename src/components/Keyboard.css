@@ -2,6 +2,9 @@
   text-align: center;
   font-size: 14px;
   font-family: sans-serif;
+  border: solid 1px #6c757d;
+  border-radius: 5px;
+  padding: 16px 0 16px 0;
 }
 
 .keyboard__row {
@@ -29,7 +32,7 @@
   width: 3.3em;
   height: 100%;
   cursor: pointer;
-  border: 1px solid #ced4da;
+  border: 1px solid #6c757d;
 }
 
 .keyboard__row--h1 > div {
@@ -37,8 +40,8 @@
 }
 
 .key--disabled {
-  background: #e9ecef;
-  border-color: #ced4da;
+  background: #6c757d;
+  border-color: #6c757d;
   color: #ced4da;
 }
 
@@ -121,4 +124,10 @@
 
 .keyboard > .keyboard__row {
   text-align: center;
+}
+
+.__react_component_tooltip.show {
+  opacity: 1 !important;
+  margin-top: 8px !important;
+  color: #212529 !important;
 }

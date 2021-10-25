@@ -33,7 +33,7 @@ export default function Textarea({ binds, onUpdateFileContent }) {
       rows="24"
       readOnly
       value={fileContent}
-      className="form-control code"
+      className="form-control bg-dark text-light code"
     ></textarea>
   );
 }

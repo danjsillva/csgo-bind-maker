@@ -3,7 +3,10 @@ import React from "react";
 export default function Table({ binds }) {
   return (
     <div className="">
-      <div className="card p-3">
+      <div
+        className="card bg-dark text-light p-3"
+        style={{ borderColor: "#6c757d" }}
+      >
         <div className="row">
           <div className="col-2">
             <dt>Tecla ou botão</dt>
@@ -18,7 +21,11 @@ export default function Table({ binds }) {
       </div>
 
       {binds.map((bind) => (
-        <div key={bind.key.value} className="card p-3 mt-1">
+        <div
+          key={bind.key.value}
+          className="card bg-dark text-light p-3 mt-1"
+          style={{ borderColor: "#6c757d" }}
+        >
           <div className="row">
             <div className="col-2">{bind.key.value}</div>
             <div className="col-3">

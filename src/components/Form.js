@@ -58,7 +58,7 @@ export default function Form({ onUpdateBinds }) {
           name="key"
           value={form.key}
           onChange={(e) => setForm({ ...form, key: e.target.value })}
-          className="form-select"
+          className="form-select bg-dark text-light"
         >
           <option value="" disabled>
             Selecione
@@ -89,7 +89,7 @@ export default function Form({ onUpdateBinds }) {
           name="command"
           value={form.command}
           onChange={(e) => setForm({ ...form, command: e.target.value })}
-          className="form-select"
+          className="form-select bg-dark text-light"
         >
           <option value="" disabled>
             Selecione
