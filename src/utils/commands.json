@@ -24,7 +24,7 @@
   { "type": "Movimentação", "value": "+speed", "description": "Mover devagar" },
   {
     "type": "Movimentação",
-    "value": "+jump;-attack;-jump",
+    "value": "+jump; -attack; -jump",
     "description": "Jump throw"
   },
 
